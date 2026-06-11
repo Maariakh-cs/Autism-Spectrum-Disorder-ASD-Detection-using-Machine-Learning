@@ -1,136 +1,164 @@
 # 🧠 Autism Spectrum Disorder (ASD) Detection using Machine Learning
 
-An end-to-end Machine Learning project for predicting the likelihood of **Autism Spectrum Disorder (ASD)** using behavioral, demographic, and psychological attributes. The project leverages supervised learning algorithms to assist in early screening and support data-driven healthcare decisions.
+A multimodal Machine Learning framework for early Autism Spectrum Disorder (ASD) detection that integrates **behavioral questionnaires**, **eye-tracking patterns**, and **facial analysis** to improve diagnostic accuracy. The project combines **Random Forest (RF)** and **Support Vector Machine (SVM)** models with **Particle Swarm Optimization (PSO)** for feature optimization and **SHAP-based Explainable AI (XAI)** to provide transparent predictions.
 
 ---
 
 ## 📌 Overview
 
-Autism Spectrum Disorder (ASD) is a neurodevelopmental condition that affects communication, social interaction, and behavior. Early identification can enable timely intervention and improve long-term outcomes.
+Autism Spectrum Disorder (ASD) is a neurodevelopmental condition where early identification can significantly improve intervention outcomes.
 
-This project applies Machine Learning techniques to analyze ASD-related data and build predictive models capable of classifying individuals based on their likelihood of having ASD.
+Unlike traditional approaches that rely on a single source of information, this project adopts a **multimodal framework** by combining:
+
+- 📝 Behavioral Questionnaire Data
+- 👀 Eye-Tracking Features
+- 😊 Facial Analysis
+
+The integration of these modalities enables the system to capture a broader range of ASD indicators while improving robustness and interpretability.
 
 ---
 
 ## 🚀 Features
 
-* 📊 Data preprocessing and exploratory data analysis (EDA)
-* 🧹 Feature engineering and data cleaning
-* 🤖 Multiple Machine Learning models for classification
-* 📈 Model training and performance evaluation
-* 🔍 Comparison of different algorithms
-* 🏥 Supports early ASD risk assessment through predictive analytics
+- 🧠 Multimodal ASD detection framework
+- 📊 Behavioral questionnaire analysis
+- 👀 Eye-tracking feature extraction
+- 😊 Conceptual facial analysis module
+- 🤖 Random Forest and Support Vector Machine classifiers
+- ⚡ Particle Swarm Optimization (PSO) for feature selection
+- 🔍 SHAP-based Explainable AI for model interpretability
+- 📈 Performance evaluation using multiple classification metrics
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* PyTorch
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
+- Python
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
+- SHAP
+- Flask
+- Particle Swarm Optimization (PSO)
 
 ---
 
-## 📂 Project Structure
-
-```text
-Autism-Spectrum-Disorder-ASD-Detection-using-Machine-Learning/
-│
-├── dataset/
-├── notebooks/
-├── models/
-├── src/
-├── images/
-├── requirements.txt
-├── README.md
-└── main.py
-```
-
----
-
-## ⚙️ Machine Learning Workflow
+## ⚙️ Machine Learning Pipeline
 
 1. Data Collection
-2. Data Cleaning & Preprocessing
-3. Exploratory Data Analysis
-4. Feature Selection
-5. Model Training
-6. Model Evaluation
-7. Performance Comparison
+2. Data Preprocessing
+3. Behavioral Feature Analysis
+4. Eye-Tracking Feature Processing
+5. Facial Feature Analysis
+6. Feature Optimization using PSO
+7. Model Training using Random Forest and SVM
+8. SHAP-based Explainability Analysis
+9. Multimodal Prediction Integration
+10. Performance Evaluation
 
 ---
 
-## 🧠 Algorithms Explored
+## 🤖 Models Used
 
-* Support Vector Machine (SVM)
-* Logistic Regression
-* Decision Tree
-* Random Forest
-* Deep Learning Models (PyTorch)
+- Random Forest (RF)
+- Support Vector Machine (SVM)
+- Particle Swarm Optimization (PSO) for feature optimization
+- SHAP Explainability Framework
 
 ---
 
-## 📊 Evaluation Metrics
+## 📊 Integrated System Performance
 
-The models are evaluated using standard classification metrics, including:
+| Metric | Score |
+|---------|------:|
+| **Accuracy** | **90%** |
+| **Precision** | **88%** |
+| **Recall** | **92%** |
+| **F1 Score** | **90%** |
+| **ROC-AUC** | **0.93** |
 
-* Accuracy
-* Precision
-* Recall
-* F1 Score
-* Confusion Matrix
+The multimodal integrated system demonstrated improved performance compared to relying on a single diagnostic modality.
+
+---
+
+## 💡 Explainable AI Insights
+
+SHAP analysis identified the following influential factors:
+
+### 📝 Behavioral Module
+
+Most influential questionnaire features:
+
+- A3 (Social Communication)
+- A7 (Social Communication)
+- A5 (Restricted Behaviors)
+- A9 (Restricted Behaviors)
+
+### 👀 Eye-Tracking Module
+
+Key predictors:
+
+- Fixation Duration
+- Saccade Variability
+
+### 😊 Facial Analysis Module
+
+- Eye Contact Stability served as a moderate but meaningful predictor.
+
+These findings align closely with recognized behavioral and neurocognitive indicators of ASD.
 
 ---
 
 ## 💡 Key Highlights
 
-* Developed a multi-model classification pipeline for ASD prediction.
-* Applied Machine Learning and Deep Learning techniques for healthcare analytics.
-* Focused on improving early screening through data-driven predictions.
-* Demonstrates practical experience in data preprocessing, feature engineering, and model evaluation.
+- Built a multimodal ASD detection framework combining behavioral, cognitive, and visual data.
+- Integrated Random Forest and Support Vector Machine classifiers for robust prediction.
+- Applied Particle Swarm Optimization (PSO) to improve feature selection and reduce redundancy.
+- Implemented SHAP-based Explainable AI for transparent and interpretable predictions.
+- Achieved **90% Accuracy**, **90% F1 Score**, and **0.93 ROC-AUC** on the integrated system.
 
 ---
 
-## ▶️ Getting Started
+## 📂 Project Workflow
 
-### Clone the repository
-
-```bash
-git clone https://github.com/Maariakh-cs/Autism-Spectrum-Disorder-ASD-Detection-using-Machine-Learning.git
-```
-
-### Navigate to the project directory
-
-```bash
-cd Autism-Spectrum-Disorder-ASD-Detection-using-Machine-Learning
-```
-
-### Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run the project
-
-```bash
-python main.py
+```text
+Behavioral Data
+        │
+        ▼
+Eye-Tracking Data
+        │
+        ▼
+Facial Analysis
+        │
+        ▼
+Feature Optimization (PSO)
+        │
+        ▼
+Random Forest + SVM
+        │
+        ▼
+SHAP Explainability
+        │
+        ▼
+Integrated ASD Prediction
 ```
 
 ---
 
-## 📚 Future Improvements
+## 🔮 Future Improvements
 
-* Hyperparameter optimization
-* Model deployment using Flask or FastAPI
-* Interactive web interface
-* Explainable AI (XAI) visualizations
-* Integration with cloud deployment platforms
+- Integration of larger adult facial datasets
+- Real-time webcam-based facial analysis
+- Deep Learning-based multimodal fusion
+- Cloud deployment using Flask/FastAPI
+- Clinical decision support dashboard
+
+---
+
+## ⚠️ Disclaimer
+
+This project is intended for educational and research purposes only. It is designed as a decision-support tool and should **not** replace professional medical diagnosis or clinical evaluation.
 
 ---
 
@@ -138,11 +166,9 @@ python main.py
 
 **Maaria Khan**
 
-* GitHub: https://github.com/Maariakh-cs
-* LinkedIn: https://www.linkedin.com/in/maariakh-cs/
+- GitHub: https://github.com/Maariakh-cs
+- LinkedIn: https://www.linkedin.com/in/maariakh-cs/
 
 ---
 
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
+⭐ If you found this project useful, consider giving it a star on GitHub!
